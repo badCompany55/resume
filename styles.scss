@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text|Roboto&display=swap');
+
+$roboto: 'Roboto', sans-serif;
+$shoulders: 'Big Shoulders Text', cursive;
+
+.header {
+	font-family: $roboto;
+	padding-left: 30px;
+	background: linear-gradient(45deg, rgba(41, 110, 133, .5), white 70%);
+	border-radius: 5px;
+	.name {
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+	}
+
+	.title {
+		margin-top: 0px;
+		padding-top: 0px;
+	}
+	
+	.contact {
+		display: flex;
+		.imgCont {
+			font-size: 1.5rem;
+			padding-bottom: 10px;
+			display: flex;
+			flex-wrap:  wrap;
+
+			.contactInfo {
+				font-size: 1rem;
+				margin-left: 15px;
+				margin-right: 15px;
+			}
+		}
+	}
+}
+
+.resBody {
+	display: flex;
+	flex-wrap:  wrap;
+	.left {
+		background-color: lightgray;
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-bottom: 205px;
+		border-radius: 5px;
+		width: 33%;
+		font-family: $roboto;
+
+		.projectsHead {
+			margin-bottom: 0px;
+			padding-bottom: 0px;
+		}
+
+		.projectCont {
+			margin-top: 0px;
+			padding-top: 0px;
+
+			.projectTitle {
+				margin-top: 3px;
+				padding-top: 3px;
+				margin-bottom: 0px;
+				padding-bottom: 0px;
+				font-family: $shoulders;
+				font-weight: bold;
+				text-decoration: underline;
+				margin-bottom: 5px;
+			}
+
+			div {
+				font-size: .8rem;
+
+				p {
+					margin-top: 5px;
+					margin-bottom: 5px;
+					margin-left: 25px;
+				}
+
+				ul {
+					margin-top: 0px;
+				}
+			}
+		}
+
+		.skills {
+			display: flex;
+			flex-wrap:  wrap;
+
+			.skillsHead {
+				width: 100%;
+				margin-bottom: 0px;
+			}
+
+			ul {
+				margin-top: 10px;
+				margin-left: 5px;
+			}
+		}
+	}
+
+	.right {
+		width: 55%;
+		font-family: $roboto;
+		margin-left: 15px;
+
+		.experienceHead {
+			font-size: 1.5rem;
+		}
+		
+		.experienceCont {
+			margin-left: 20px;
+			margin-bottom: 15px;
+
+			.titleCont {
+				display: flex;
+				flex-wrap:  wrap;
+				justify-content: space-between;
+				font-family: $shoulders;
+
+				.experienceTitle {
+					margin-top: 0px;
+					margin-bottom: 0px;
+					font-size: 1.2rem;
+				}
+
+				.date {
+					margin-bottom: 0px;
+				}
+			}
+
+			.comp {
+				margin-top: 0px;
+
+				.desc {
+					margin-top: 0px;
+					font-family: $shoulders;
+				}
+
+				ul {
+					font-size: .9rem;
+					
+					li {
+						margin-bottom: 7px;
+					}
+				}
+			}
+		}
+	}
+}
